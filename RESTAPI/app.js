@@ -9,7 +9,7 @@ var session = require('express-session');
 
 require('./models/models');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/pregnancy-tracker');
+mongoose.connect('mongodb://localhost:27017/pregnancy-tracker');
 
 //routing
 var api = require('./routes/api');
